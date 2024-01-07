@@ -214,6 +214,11 @@ button, a { transition: var(--transition); }
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
+.h4 {
+  color: var(--space-cadet);
+  font-family: var(--ff-nunito);
+  line-height: 1.4;
+}
 
 .h1 {
   font-size: var(--fs-1);
@@ -226,6 +231,8 @@ button, a { transition: var(--transition); }
 .h2 { font-size: var(--fs-2); }
 
 .h3 { font-size: var(--fs-4); }
+.h4 { font-size: var(--fs-5); }
+
 
 .w-100 { width: 100%; }
 
@@ -361,6 +368,7 @@ button, a { transition: var(--transition); }
   color: var(--independence);
   line-height: 1.8;
   margin-bottom: 30px;
+  max-width: 55ch;
 }
 
 .hero-banner { display: none; }
@@ -484,7 +492,6 @@ button, a { transition: var(--transition); }
   text-overflow: ellipsis;
 }
 
-.featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
 .featured-car-card .year {
   font-family: var(--ff-nunito);
@@ -667,7 +674,8 @@ button, a { transition: var(--transition); }
   border-radius: var(--radius-18);
   border: 1px solid var(--white);
   box-shadow: var(--shadow-1);
-  overflow: hidden;
+  overflow: auto;
+  height: 350px;
 }
 
 .blog-card .card-banner {
@@ -763,7 +771,7 @@ button, a { transition: var(--transition); }
 .footer a { color: inherit; }
 
 .footer-top {
-  padding-block: 60px;
+  padding-block: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -843,6 +851,18 @@ button, a { transition: var(--transition); }
 @media (min-width: 350px) {
 
   /**
+   * HEADER
+   */
+
+  .header-actions .btn span {
+    display: block;
+    font-weight: var(--fw-400);
+    padding-inline: 15px;
+  }
+
+  .header-actions .btn:first-of-type ion-icon { display: none; }
+
+  /**
    * FEATURED CAR
    */
 
@@ -850,7 +870,7 @@ button, a { transition: var(--transition); }
 
   .featured-car-card .card-price { margin-right: auto; }
 
-  .featured-car-card .btn:last-child {
+  .featured-car-card .btn {
     min-width: max-content;
     padding-inline: 15px;
   }
@@ -960,7 +980,7 @@ button, a { transition: var(--transition); }
   .hero {
     position: relative;
     min-height: 85vh;
-    display: flex;
+    display: block;
     align-items: center;
     z-index: 1;
   }
