@@ -125,6 +125,10 @@ input {
   font: inherit;
 }
 
+path{
+  fill: rgb(89, 60, 251);
+}
+
 button { cursor: pointer; }
 
 input { width: 100%; }
