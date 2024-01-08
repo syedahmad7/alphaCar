@@ -857,7 +857,7 @@ button, a { transition: var(--transition); }
   .header-actions .btn span {
     display: block;
     font-weight: var(--fw-400);
-    padding-inline: 15px;
+    padding-inline: 8px;
   }
 
   .header-actions .btn:first-of-type ion-icon { display: none; }
